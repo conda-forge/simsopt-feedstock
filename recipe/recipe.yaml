@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.10.6"
+  version: "1.11.0"
 
 package:
   name: simsopt
@@ -9,12 +9,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/simsopt/simsopt-${{ version }}.tar.gz
-  sha256: 3d7f8ec9eabefba71def21bf5a29c328dda1902b3773131e959d6bd531289199
+  sha256: 37ffc6bd6db0c6e89264118239be00e52a0d81664dd2b9c0b47c9f47d88242ac
   patches:
     - use-cmake-find-package-for-dependencies.patch
 
 build:
-  number: 7
+  number: 0
   skip:
     - win
   script:
